@@ -1,1 +1,7 @@
 # Capstone-project-ODULEYE-OLUWAKAMISI
+This is a project i built to predict if a building will have insurance claim. I used the dataset of 7,000 buildings and checked the size, age and location to see if we can guess which ones are high risk. I am very grateful to the incubator hub program for this opportunity. The program has helped me so much as i have also been reading books along side the program to improve my skills it has really been a great journey for me and i am very grateful.
+The main task was to predict the Claim column where 0 is no claim and 1 is at least one claim was made.
+
+The data had some issues i had to fix first. I cleaned up the NumberOfWindows column because it had weird characters like . and >=10. I filled missing values for building dimensions and occupancy dates so the models wouldn't crash. I made a new feature called Building Age by calculating years between when building was occupied and when it was observed. I made charts like Heatmap to see features related to each other and Countplot to see buildings with claims and Bar chart for rural versus urban areas.
+
+I tried three models to see which one is accurate. Logistic Regression which is the simple baseline and Random Forest which is a tree based model then Gradient Boosting. All the models performed around 78 percent accuracy but Gradient Boosting and Random Forest were slightly better at picking up the actual claims.
